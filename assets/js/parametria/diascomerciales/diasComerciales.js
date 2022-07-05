@@ -176,6 +176,7 @@ function cargarDiaComercial (id, accion,fecha) {
   formData.append("id", id);
   formData.append('fecha', fecha);
 
+
   
   $.ajax({
     type: "POST",
@@ -189,11 +190,13 @@ function cargarDiaComercial (id, accion,fecha) {
       $("#cuerpolistaDiasComerciales").html(response);
 
       if (accion == 'ver') {
+            $('#dia_semana').css('display','block');
             $('input').prop('readonly',true);
             $('button#btnRegistrarDia').css('display','none');  
             $('button#btnActualizarDia').css('display','block');
 
       }else{
+            
             $('button#btnRegistrarDia').css('display','none');
             $('button#btnActualizarDia').css('display','block');
             $('button#btnActualizarDia').prop('disabled',false);

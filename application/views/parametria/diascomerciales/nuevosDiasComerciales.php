@@ -1,3 +1,4 @@
+
 <div class="login-box-body" style="height: auto; text-align: left; font-size: 14px;">
   <strong>Crear nuevo Dia Comercial</strong>
   <br>
@@ -8,27 +9,25 @@
       </div>
       <form class="form-horizontal" id="formDatosBasicos">
         <div class="box-body">
+        <div class="form-group" id="dia_semana" style="display:none; font-size: 20px; font-weight: 500; margin-left: 1px;" >
+             <?php  echo $dia_semana ; ?>    
+          </div>
           <div class="form-group">
             <input  type="text" id="id" style="display:none " value="<?php if(isset($id)) echo $id ;?>">
          
             <label for="fecha" class="col-sm-1 control-label">Fecha</label>
-
             <div class="col-sm-5" id="divfecha">
               <input  type="date" style= "width: 150px;" min="<?php $hoy=date("Y-m-d"); echo $hoy;?>"class="form-control" id="fecha"
-                       required  value="<?php if(isset($fecha)) echo $fecha?>"
-                      >
+                       required  value="<?php if(isset($fecha)) echo $fecha?>">        
             </div>
           </div>
           <div class="form-group">
             <label for="descripcion"  class="col-sm-1 control-label">Descripcion</label>
-
             <div class="col-sm-1">
               <input  type="text" style= "width: 200px;" minlength="1" maxlength="50" class="form-control" id="descripcion"
-                      placeholder="Descripcion del evento" required value="<?php if(isset($descripcion)) echo $descripcion?>"
-                      >
-            </div>
-
+                      placeholder="Descripcion del evento" required value="<?php if(isset($descripcion)) echo $descripcion?>">
           </div>  
+
         </div>
         <div class="col-sm-12" style="margin-top: -3px;">
           <div class="box-footer col-sm-6" style="text-align: center;">

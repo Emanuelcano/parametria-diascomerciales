@@ -2,11 +2,10 @@
 <table data-page-length='10' align="center" id="tp_listaDiasComerciales" class="table table-striped table=hover display" width="100%">
   <thead>
     <tr class="info">
-    <th style="width: 10%; padding: 0px; padding-left: 70px;">Id</th>
-   <!-- <th style="display:none">dia oculto</th> -->
+    <th style="width: 10%; padding: 0px; padding-left:110px;">Id</th>
     <th style="width: 10%; padding: 0px; padding-left: 20px;">Dia</th>
-    <th style="width: 10%; padding: 0px; padding-left: 50px;">Fecha</th>
-    <th style="width: 50%; padding: 0px; padding-left: 350px;">Descripcion</th>
+    <th style="width: 10%; padding: 0px; padding-left: 100px;">Fecha</th>
+    <th style="width: 20%; padding: 0px; padding-left: 200px;">Descripcion</th>
     <th style="width: 20%; padding: 0px;">&nbsp;</th>
     </tr>
   </thead>

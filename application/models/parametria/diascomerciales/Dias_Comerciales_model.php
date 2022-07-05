@@ -38,6 +38,7 @@ class Dias_Comerciales_model extends CI_Model
             $this->db_parametria->select('id, fecha, descripcion');
             $this->db_parametria->from('dia_comercial');
             $this->db_parametria->where('id', $id);
+           
             $query = $this->db_parametria->get();
             return $query->result_array();
         }

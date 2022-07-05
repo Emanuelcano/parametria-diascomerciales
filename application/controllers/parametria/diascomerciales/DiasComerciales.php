@@ -28,6 +28,8 @@ class DiasComerciales extends CI_Controller
 
         public function listaDiasComerciales()
             {
+                
+
                 $listaDias=$this->Dias_Comerciales_model->get_lista_dias_comerciales();
                 $fechas_es=['Domingo','Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'];
                 
@@ -44,8 +46,16 @@ class DiasComerciales extends CI_Controller
 
         public function nuevoDiaComercial()
             {
+                $listaDias=$this->Dias_Comerciales_model->get_lista_dias_comerciales();
+                $fechas_es=['Domingo','Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'];
                 
-                $this->load->view('parametria/diascomerciales/nuevosDiasComerciales');
+                foreach ($listaDias as $key => $value) {
+                    $dia_sem = date('w', strtotime($value['fecha']));
+                  
+                    $listaDias[$key]['dia_semana'] = $fechas_es[$dia_sem];
+                }
+                
+                $this->load->view('parametria/diascomerciales/nuevosDiasComerciales',['data'=>$listaDias]);
         
             }
 
@@ -96,14 +106,23 @@ class DiasComerciales extends CI_Controller
                                   
             }
 
-        public function cargarDiaComercial()
-            {
+    public function cargarDiaComercial()
+        {
+
+            
               
               $id =  $this->input->post('id');      
               $data = $this->Dias_Comerciales_model->cargar_Dia($id)[0];
-              $this->load->view('parametria/diascomerciales/nuevosDiasComerciales', $data);
+
+              $fechas_es=['Domingo','Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'];  
+              
+              $dia_semana = date('w', strtotime($data['fecha']));
+                  
+              $data['dia_semana'] = $fechas_es[$dia_semana];
+
+              $this->load->view('parametria/diascomerciales/nuevosDiasComerciales', $data  );
                 
-            }
+        }
           
     public function actualizarDiaComercial()
         {
