@@ -1,0 +1,3 @@
+const skilResult = '{"ANSWER": "CONTESTADO","NO-ANSWER": "NO CONTESTADO","ABANDON": "ABANDONADO","BUSY": "OCUPADO","CONGESTION": "CONGESTION","FAILED": "FALLIDO","ANSWER-MACHINE": "CONTESTADOR","ANSWER-MACHINE-MSG": "CONTESTADOR IVR"}';
+const callTypes = '{"out_pre": "Predictivo", "outbound_ma": "Manual", "inbound": "Entrante"}';
+const actores = '{"customer": "Cliente", "agent": "Agente", "agent_tran": "Agente"}';

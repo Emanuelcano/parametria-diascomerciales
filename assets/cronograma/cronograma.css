@@ -1,0 +1,61 @@
+#eventTypeContainer #uniqueEvent, #eventTypeContainer #repetitiveEvent {
+	width:100%
+}
+
+.cronograma-container .btn-period {
+	width: 100%;
+}
+
+#timeMonth, #dayMonth, #timeYear, #dateYear, #horaSemana, #horaDiaria {
+	width: 50px;
+}
+
+#weaksCheckboxesDiv, #weakCharDays {
+	width: 230px;
+}
+
+#containerRepetitive {
+	display: none;
+}
+
+#uniqueDate {
+	width: 120px;
+}
+
+#divContainerWeakDay {
+	width: 30px;
+	display: inline-block;
+}
+
+#divHours {
+	margin-top: 15px;
+}
+
+.weakCharacterLabel {
+	cursor: pointer;
+}
+
+#table-events tr.disabled{
+	background-color: #bdc3c7;
+}
+
+#action-column {
+	width: 100px;
+}
+
+.action-buttons-cell .btn {
+	margin-right: 5px;
+}
+
+.modalLoading {
+	width: 100%;
+	text-align: center;
+	background-color: #f4f4f4;
+	padding: 30px;
+	font-size: 40px;
+}
+
+#modal-info-text pre {
+	white-space: pre-wrap;
+}
+

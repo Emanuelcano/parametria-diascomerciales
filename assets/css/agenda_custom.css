@@ -1,0 +1,81 @@
+#texto_agenda .yellow {
+    background-color: #e4e40a;
+}
+#texto_agenda .orange {
+    background-color: orange;
+}
+#texto_agenda .red {
+    background-color: red;
+}
+#texto_agenda .default {
+    background-color: #d2d6de;
+}
+#texto_agenda .box {
+    border-top: none;
+}
+#texto_agenda .alert.alert-custom {
+    padding: 2px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+#texto_agenda .alert-custom >.alert-dismissable .close, .alert-dismissible .close {
+    position: relative;
+    top: -3px;
+    right: 0px;
+}
+#texto_agenda button > span.text-danger{
+    color : red !important;
+    opacity : 100% !important;
+}
+#texto_agenda .horizontal-scroll > .col-md-1.col-sm-6.col-xs-12.small{
+    padding: 0px 0px !important;
+}
+#texto_agenda .horizontal-scroll{
+    overflow-x: auto;
+    white-space: nowrap;
+}
+#texto_agenda .horizontal-scroll {
+  margin: 0px 15px !important;
+}
+#texto_agenda .horizontal-scroll > .col-md-1 {
+  display: inline-block;
+  float: none;
+  padding: 0px 0px !important;
+}
+
+#texto_sol_ajustes span {
+    text-align: left; 
+    font-size : 12px;
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    background-color: yellow; 
+    border-color: indianred; 
+    color: black;
+    margin: 0px 1px;
+    width: 24%;
+}
+
+#toast-container.test {
+    display: flex;
+    right: 130px;
+    top: 5px;
+  }
+  #toast-container.test > .toast {
+    background-image: none !important;
+  }
+  #toast-container.test > .toast:before {
+      position: fixed;
+      font-family: FontAwesome;
+      font-size: 24px;
+      line-height: 18px;
+      float: left;
+      color: #FFF;
+      padding-right: 0.5em;
+      margin: auto 0.5em auto -1.5em;
+  }
+  #toast-container.test > .toast-error:before {
+    content: "\f03d";
+  }
+  div.toastvideollamada.prueba {
+    margin-right: 5px !important;
+  }
